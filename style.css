@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-ff: 'Poppins', sans-serif;
+    --primary-color: #0766AD;
+}
+body {
+    background-color: #EEF5FF;
+    font-family: var(--primary-ff);
+}
+
+/* Utility classes */
+.d-flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.items-center {
+   align-items: center;
+}
+.direction-clmn {
+    flex-direction: column;
+}
+.gap {
+    gap: 1.5rem;
+}
+/* End of Utility classes */
+
+
+/* Utility elements */
+input,textarea {
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-family: var(--primary-ff);
+    margin-top: 1rem;
+    padding: .8rem .4rem;
+    width: 100%;
+}
+textarea {
+    resize: none;
+    height: 200px;
+}
+/* End of utility elements */
+.wrapper {
+    width: 40%;
+    padding: 1rem;
+}
+.container .add-new-task {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+.container .add-new-task .add-new-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.container .add-new-task .add-new-btn span {
+    font-size: 2.2rem;
+    transition: all ease-in-out .4s;
+}
+.tasks-area {
+    text-align: center;
+}
+.tasks-area button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    font-family: var(--primary-ff);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 25%;
+}
+.tasks-table .task {
+    background-color: white;
+    border-bottom: 1px solid gray;
+    border-left: 5px solid var(--primary-color);
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+.tasks-table .task:hover {
+    box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.1); 
+}
+.tasks-table .task .task-texts {
+    padding: .3rem;
+    width: 100%;
+}
+.tasks-table .task .task-texts h3 {
+    color: var(--primary-color);
+    margin-bottom: .3rem;
+}
+.tasks-table .task .task-cta {
+    width: 20%;
+    margin-left: 1rem;
+    gap: .5rem;
+}
+.tasks-table .task .task-cta span {
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: .5rem;
+    height: 40px;
+    width: 40px;
+}
+.tasks-table .task .task-cta #edit {
+    background-color: #008cff;
+}
+.tasks-table .task .task-cta #done {
+    background-color: #03a300;
+}
+.tasks-table .task .task-cta #remove {
+    background-color: #dc143c;
+}
