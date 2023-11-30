@@ -14,6 +14,9 @@ body {
 }
 
 /* Utility classes */
+.d-none {
+    display: none;
+}
 .d-flex {
     display: flex;
 }
@@ -31,6 +34,12 @@ body {
 }
 .gap {
     gap: 1.5rem;
+}
+.rotate-45 {
+    transform: rotate(45deg);
+}
+.translateY-24 {
+    transform: translateY(.5rem);
 }
 /* End of Utility classes */
 
@@ -50,6 +59,7 @@ textarea {
     height: 200px;
 }
 /* End of utility elements */
+
 .wrapper {
     width: 40%;
     padding: 1rem;
@@ -64,13 +74,14 @@ textarea {
     border: none;
     cursor: pointer;
     color: white;
+    transition: all ease-in-out .4s;
 }
 .container .add-new-task .add-new-btn span {
     font-size: 2.2rem;
-    transition: all ease-in-out .4s;
 }
 .tasks-area {
     text-align: center;
+    transition: all .5s ease-in-out;
 }
 .tasks-area button {
     background-color: var(--primary-color);
@@ -83,6 +94,10 @@ textarea {
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 25%;
+}
+.tasks-table {
+    transition: all .5s ease-in-out;
+    transform: translateY(-24.5rem);
 }
 .tasks-table .task {
     background-color: white;
