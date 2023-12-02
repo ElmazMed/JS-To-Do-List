@@ -14,8 +14,8 @@ body {
 }
 
 /* Utility classes */
-.d-none {
-    display: none;
+.v-hidden {
+    visibility: hidden;
 }
 .d-flex {
     display: flex;
@@ -37,9 +37,6 @@ body {
 }
 .rotate-45 {
     transform: rotate(45deg);
-}
-.translateY-24 {
-    transform: translateY(.5rem);
 }
 /* End of Utility classes */
 
@@ -81,7 +78,7 @@ textarea {
 }
 .tasks-area {
     text-align: center;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 .tasks-area button {
     background-color: var(--primary-color);
@@ -97,7 +94,11 @@ textarea {
 }
 .tasks-table {
     transition: all .5s ease-in-out;
-    transform: translateY(-24.5rem);
+    /* transform: translateY(-24.5rem); */
+}
+/* I used the "translateY-24" to toggle it in the "tasks-table" */
+.translateY-24 {
+    transform: translateY(.5rem);
 }
 .tasks-table .task {
     background-color: white;
@@ -117,6 +118,13 @@ textarea {
     color: var(--primary-color);
     margin-bottom: .3rem;
 }
+.tasks-table .task .task-texts p {
+    margin-bottom: 1rem;
+}
+.tasks-table .task .task-texts span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
 .tasks-table .task .task-cta {
     width: 20%;
     margin-left: 1rem;
@@ -133,7 +141,7 @@ textarea {
 .tasks-table .task .task-cta #edit {
     background-color: #008cff;
 }
-.tasks-table .task .task-cta #done {
+.tasks-table .task .task-cta .done {
     background-color: #03a300;
 }
 .tasks-table .task .task-cta #remove {
