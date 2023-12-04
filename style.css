@@ -90,7 +90,7 @@ textarea {
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 25%;
+    width: 170px;
 }
 .tasks-table {
     transition: all .5s ease-in-out;
@@ -100,7 +100,7 @@ textarea {
 .translateY-24 {
     transform: translateY(.5rem);
 }
-.tasks-table .task {
+.task {
     background-color: white;
     border-bottom: 1px solid gray;
     border-left: 5px solid var(--primary-color);
@@ -138,12 +138,12 @@ textarea {
     height: 40px;
     width: 40px;
 }
-.tasks-table .task .task-cta #edit {
+.tasks-table .task .task-cta .edit {
     background-color: #008cff;
 }
 .tasks-table .task .task-cta .done {
     background-color: #03a300;
 }
-.tasks-table .task .task-cta #remove {
+.tasks-table .task .task-cta .remove {
     background-color: #dc143c;
 }
